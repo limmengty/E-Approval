@@ -1,0 +1,28 @@
+server:
+  port: 8090
+spring:
+  name: E-Approval
+  datasource:
+    url: jdbc:postgresql://0.0.0.0:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+camunda:
+  client:
+    mode: self-managed
+
+#    auth:
+#      client-id: zeebe
+#      client-secret: zecret
+#      issuer: http://localhost:18080/auth/realms/camunda-platform/protocol/openid-connect/token
+    zeebe:
+      enabled: true
+      grpc-address: http://localhost:26500
+      rest-address: http://localhost:8090
+      prefer-rest-over-grpc: false
+      audience: zeebe-api
