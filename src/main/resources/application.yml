@@ -11,11 +11,14 @@ spring:
     hibernate:
       ddl-auto: update
 
+#bpmn:
+#  directory: process
+#  file-pattern: "**/*.bpmn"
+#  external-path: ${BPMN_EXTERNAL_PATH:file:/opt/bpmn/process/}
 
 camunda:
   client:
     mode: self-managed
-
 #    auth:
 #      client-id: zeebe
 #      client-secret: zecret
