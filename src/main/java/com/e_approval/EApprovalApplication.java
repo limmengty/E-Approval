@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-@Deployment(resources = "classpath:process-payments.bpmn")
+@Deployment(resources = "classpath:leave-process.bpmn")
 public class EApprovalApplication {
 
 	public static void main(String[] args) {

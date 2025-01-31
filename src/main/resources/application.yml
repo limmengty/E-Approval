@@ -4,8 +4,8 @@ spring:
   name: E-Approval
   datasource:
     url: jdbc:postgresql://0.0.0.0:5432/postgres
-    username: postgres
-    password: postgres
+    username: bn_keycloak
+    password: "#3]O?4RGj)DE7Z!9SA5"
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
